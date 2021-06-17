@@ -1,0 +1,73 @@
+@import '../../App.scss';
+
+.contacts {
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__img {
+        width: 540px;
+        height: 340px;
+        background-image: url('../../assets/img/2.jpg');
+        background-size: cover;
+    }
+
+    &__tel {
+        font-size: 60px;
+        line-height: 93%;
+        margin-bottom: 50px;
+        display: inline-block;
+        transition: all .3s ease;
+
+        &:hover {
+            color: black;
+            transition: all .3s ease;
+        }
+    }
+
+    &__fullname {
+        margin-bottom: 25px;
+        margin-left: 23px;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -25px;
+            width: 2px;
+            height: 100%;
+            background-color:$hover-color;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+    }
+
+    &__mail {
+        font-size: 20px;
+        line-height: 24px;
+        color: #333D51;
+        margin-bottom: 52px;
+        display: inline-block;
+
+        &:hover {
+            color:$hover-color;        
+        }
+    }
+
+    &__text {
+        color: #333D5180;
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 25px;
+    }
+
+    &__hardskills {
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@import './Contacts-media.scss';

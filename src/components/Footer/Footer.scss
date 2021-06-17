@@ -1,0 +1,41 @@
+.footer {
+    padding: 45px 0;
+    margin-top: 90px;
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        text-align: left;
+    }
+
+    &__disc {
+        font-size: 12px;
+        line-height: 14.62px;
+    }
+
+    &__text {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    &__by {
+        text-align: right;
+
+        span {
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        p {
+            font-size: 25px;
+            line-height: 30px;
+            font-weight: 700;
+        }
+    }
+}
+
+@import './Footer-media.scss';

@@ -1,0 +1,28 @@
+@media (max-width: 575.98px) { 
+
+    .footer {
+        margin-top: 0px;
+        padding: 30px 0;
+
+        &__menu {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__logo {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+        &__by {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

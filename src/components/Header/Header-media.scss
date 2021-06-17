@@ -1,0 +1,105 @@
+@media (max-width: 767.98px) { 
+
+    .header {
+        margin-bottom: 35px;
+
+        &__burger {
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 20px;
+    
+            span {
+                position: absolute;
+                background-color: black;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                top: 9px;
+                transition: all .3s ease 0s;
+            }
+    
+            &::before, &::after {
+                content: '';
+                background-color: black;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                transition: all .3s ease 0s;
+                left: 0;
+            }
+            &::before {
+                top: 0;
+            }
+    
+            &::after {
+                bottom: 0;
+            }
+    
+            &.active {
+                z-index: 3;
+    
+                & span {
+                    transform: scale(0);
+                    background-color: white;
+                }
+    
+                &::before {
+                    transform: rotate(45deg);
+                    top: 9px;
+                    background-color: white;
+                }
+    
+                &::after {
+                    transform: rotate(-45deg);
+                    bottom: 9px;
+                    background-color: white;
+                }
+            }
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .burger-menu {
+        z-index: 2;
+        width: 100%;
+        position: absolute;
+        top: -100%;
+        height: 150px;
+        left: 0;
+        background-color: dodgerblue;
+        padding-top: 10px;
+        transition: all .3s ease;
+
+        &__wrapper {
+            list-style: none;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+
+        &__item {
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        &.active {
+            top: 0;
+            transition: all .3s ease;
+            position: fixed;
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+        }
+
+        &__link {
+            color: white;
+        }
+    }
+    }
+}

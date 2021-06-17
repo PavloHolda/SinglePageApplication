@@ -1,0 +1,57 @@
+@import '../../App.scss';
+
+.header {
+    padding: 45px 0;
+    align-items: center;
+    margin-bottom: 90px;
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.logo {
+    display: block;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: $main-color;
+
+    &:hover {
+        color:$hover-color;
+    }
+}
+
+.menu {
+    width: 285px;
+    &__wrapper {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    }
+
+    &__item {
+        :hover, :active, :focus {
+            color:$hover-color;
+        }
+    }
+
+    &__link {
+        font-size: 18px;
+        color: $main-color;
+        line-height: 22px;
+    }
+}
+
+.burger-menu {
+    display: none;
+}
+
+.header__burger {
+    display: none;
+}
+
+@import './Header-media.scss';

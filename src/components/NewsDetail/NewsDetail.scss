@@ -1,0 +1,59 @@
+@import '../../App.scss';
+
+.detail {
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+    }
+
+    &__right {
+        text-align: left;
+        max-width: 730px;
+
+        p {
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+    }
+
+    &__link {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+    &__title{
+        font-size: 50px;
+        max-width: 320px;
+        line-height: 65px;
+
+        &:last-child {
+            color:red;
+        }
+    }
+
+    &__img {
+        width: 730px;
+        height: 380px;
+        background-size: cover;
+        margin-bottom: 60px;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@import './NewsDetail-media.scss';
